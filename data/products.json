@@ -1,0 +1,117 @@
+[
+    {
+        "name": "Wireless Mouse",
+        "price": 25.99,
+        "description": "Ergonomic wireless mouse with adjustable DPI.",
+        "ratings": 4.5,
+        "images": [
+            {
+                "image": "image1.jpg"
+            }
+        ],
+        "catagory": "Electronics",
+        "seller": "TechStore",
+        "stoke": 150,
+        "numOfReviews": 10,
+        "reviews": [
+            {
+                "name": "John Doe",
+                "rating": 5,
+                "comment": "Great mouse, very comfortable!"
+            }
+        ],
+        "createdAt": "2023-10-01T00:00:00.000Z"
+    },
+    {
+        "name": "Bluetooth Headphones",
+        "price": 59.99,
+        "description": "Noise-cancelling over-ear headphones with Bluetooth 5.0.",
+        "ratings": 4.7,
+        "images": [
+            {
+                "image": "image2.jpg"
+            }
+        ],
+        "catagory": "Electronics",
+        "seller": "AudioWorld",
+        "stoke": 75,
+        "numOfReviews": 8,
+        "reviews": [
+            {
+                "name": "Jane Smith",
+                "rating": 4,
+                "comment": "Good sound quality, but a bit tight."
+            }
+        ],
+        "createdAt": "2023-10-02T00:00:00.000Z"
+    },
+    {
+        "name": "Gaming Keyboard",
+        "price": 45.99,
+        "description": "Mechanical keyboard with RGB lighting.",
+        "ratings": 4.8,
+        "images": [
+            {
+                "image": "image3.jpg"
+            }
+        ],
+        "catagory": "Accessories",
+        "seller": "GameGear",
+        "stoke": 200,
+        "numOfReviews": 15,
+        "reviews": [
+            {
+                "name": "Alice Brown",
+                "rating": 5,
+                "comment": "Amazing keyboard for gaming!"
+            }
+        ],
+        "createdAt": "2023-10-03T00:00:00.000Z"
+    },
+    {
+        "name": "Smartphone Stand",
+        "price": 15.99,
+        "description": "Adjustable aluminum stand for smartphones and tablets.",
+        "ratings": 4.3,
+        "images": [
+            {
+                "image": "image4.jpg"
+            }
+        ],
+        "catagory": "Accessories",
+        "seller": "GadgetHub",
+        "stoke": 300,
+        "numOfReviews": 5,
+        "reviews": [
+            {
+                "name": "Chris Green",
+                "rating": 4,
+                "comment": "Very useful and sturdy."
+            }
+        ],
+        "createdAt": "2023-10-04T00:00:00.000Z"
+    },
+    {
+        "name": "Portable Charger",
+        "price": 29.99,
+        "description": "10,000mAh power bank with fast charging support.",
+        "ratings": 4.6,
+        "images": [
+            {
+                "image": "image5.jpg"
+            }
+        ],
+        "catagory": "Electronics",
+        "seller": "PowerPlus",
+        "stoke": 120,
+        "numOfReviews": 12,
+        "reviews": [
+            {
+                "name": "David Lee",
+                "rating": 5,
+                "comment": "Charges my phone super fast!"
+            }
+        ],
+        "createdAt": "2023-10-05T00:00:00.000Z"
+    }
+]
