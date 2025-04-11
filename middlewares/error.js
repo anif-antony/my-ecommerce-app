@@ -1,3 +1,4 @@
+const { JsonWebTokenError } = require('jsonwebtoken');
 const ErrorHandler = require('../utils/errorHandler');
 
 module.exports = (err, req, res, next) => {
@@ -13,6 +14,9 @@ module.exports = (err, req, res, next) => {
             message: err.message,
             stack: err.stack,
         });
+
+
+
     }
 
     // Production mode
@@ -21,6 +25,7 @@ module.exports = (err, req, res, next) => {
         if (err.name === "ValidationError") {
             const message = Object.values(err.errors).map(val => val.message).join(", ");
             error = new ErrorHandler(message, 400);
+           
         }
 
         // Mongoose CastError
@@ -34,6 +39,20 @@ module.exports = (err, req, res, next) => {
             const message = `Duplicate field value entered: ${Object.keys(err.keyValue).join(", ")}`;
             error = new ErrorHandler(message, 400);
         }
+        if (err.code === 11000) {
+            const message = `Duplicate field value entered: ${Object.keys(err.keyValue).join(", ")}`;
+            error = new ErrorHandler(message, 400);
+        }
+        if(err.name=== 'JsonWebTokenError'){
+            const message = `Json Web Token is invalid. Please try again.`;
+            error = new ErrorHandler(message, 400);
+            
+        }
+        if(err.name === 'TokenExpiredError') {
+            const message = `Json Web Token is expired. Please try again.`;
+            error = new ErrorHandler(message, 400);
+        }
+        
 
         return res.status(error.statusCode || 500).json({
             success: false,

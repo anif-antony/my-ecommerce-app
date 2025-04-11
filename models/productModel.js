@@ -82,6 +82,10 @@ reviews:[
         }
     }
 ],
+user:{
+    type:mongoose.Schema.ObjectId,
+   
+},
 createdAt:{
     type:Date,
     default:Date.now
